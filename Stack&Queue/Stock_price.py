@@ -1,3 +1,5 @@
+# Link: https://programmers.co.kr/learn/courses/30/lessons/42584
+
 def solution(input):
     time = [0] * len(input)
 
