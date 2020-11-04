@@ -8,9 +8,10 @@ def alphabet_position(text):
         if ord(val) > ord("z") or ord(val) < ord("a"):
             continue
 
-        res.append(str(ord(val)-ord("a")+1))
+        res.append(str(ord(val) - ord("a") + 1))
 
-    print("'" + str(" ".join(res)) + "'")
+    return str(" ".join(res))
 
-alphabet_position("The sunset sets at twelve o' clock.")
-alphabet_position("The narwhal bacons at midnight.")
+print(alphabet_position("The sunset sets at twelve o' clock."))
+print(alphabet_position("The narwhal bacons at midnight."))
+
