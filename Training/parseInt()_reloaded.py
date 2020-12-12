@@ -8,7 +8,7 @@ def parse_int(string):
                 "thousand": 1000, "million": 1000000}
     temp = 0
 
-    for num in string.replace(' and ', ' ').replace('-', ' ').split():
+    for num in string.replace(" and ", " ").replace("-", " ").split():
         if num not in ["hundred", "thousand", "million"]:
             temp += num_dict[num]
         else:
