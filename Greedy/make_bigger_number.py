@@ -1,6 +1,6 @@
 # https://programmers.co.kr/learn/courses/30/lessons/42883?language=python3
 
-def solution(number, k):
+def solution(number: str, k: int) -> str:
     collected = []
 
     for (idx, num) in enumerate(number):
@@ -19,9 +19,9 @@ def solution(number, k):
 
     return result
 
-print(solution("1924", 2))
-print(solution("1231234", 3))
-print(solution("4177252841", 4))
+print(solution("1924", 2) == "94")
+print(solution("1231234", 3) == "3234")
+print(solution("4177252841", 4) == "775841")
 
 # from itertools import combinations
 #
