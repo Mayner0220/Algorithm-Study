@@ -1,6 +1,6 @@
 # Link: https://programmers.co.kr/learn/courses/30/lessons/42584
 
-def solution(input):
+def solution(input: list) -> list:
     time = [0] * len(input)
 
     for Index in range(len(input) - 1):
